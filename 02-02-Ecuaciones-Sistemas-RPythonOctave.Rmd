@@ -79,7 +79,10 @@ b = c(0, 5, 5, 4, -21, 11)
 AB = cbind(A,b)
 
 solution = solve(A,b)
+print('Solución: ')
 print(solution)
 
+print('Comprobamos que el resultado es correcto, usando la fórmula Ax = B')
+print('Multiplicamos la matriz A por el vector x solución y debe dar el vector de términos independientes')
 print(A%*%solution)
 ```
